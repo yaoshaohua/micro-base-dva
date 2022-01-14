@@ -1,8 +1,8 @@
 import dva from 'dva';
 import { browserHistory } from 'dva/router';
 import { registerMicroApps } from 'qiankun';
-
 import 'font-awesome/less/font-awesome.less';
+import './index.html';
 import './global.scss';
 
 const app = dva({

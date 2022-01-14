@@ -55,6 +55,6 @@
   "scripts": {
     "start": "dora --plugins \"proxy,webpack,webpack-hmr,browser-history?index=/src/index.html\"",
     "lint": "eslint --fix --ext .js,.jsx .",
-    "build": "rimraf dist/* && atool-build --hash"
+    "build": "rimraf dist/* && atool-build"
   }
 }
