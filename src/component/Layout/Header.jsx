@@ -9,10 +9,10 @@ function Header({ location }) {
       mode="horizontal"
     >
       <Menu.Item key="/">
-        <Link to="/"><Icon type="home" />Home</Link>
+        <Link to="/"><Icon type="home" />主应用 Home</Link>
       </Menu.Item>
       <Menu.Item key="/micro-vue3/about">
-        <Link to="/micro-vue3/about"><Icon type="setting" />About</Link>
+        <Link to="/micro-vue3/about"><Icon type="setting" />子应用 About</Link>
       </Menu.Item>
     </Menu>
   );

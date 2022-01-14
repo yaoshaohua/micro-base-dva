@@ -1,5 +1,5 @@
 {
-  "name": "mini-repro",
+  "name": "micro-base-dva",
   "version": "1.0.0",
   "entry": {
     "index": "./src/index.js"
@@ -7,26 +7,16 @@
   "dependencies": {
     "antd": "^2.10.4",
     "babel-polyfill": "^6.23.0",
-    "c": "^1.1.1",
     "classnames": "^2.2.5",
-    "d": "^1.0.1",
     "dva": "^1.2.1",
-    "e": "^0.2.1",
     "font-awesome": "^4.7.0",
-    "history": "^5.2.0",
-    "i": "^0.3.7",
-    "j": "^1.0.0",
     "js-cookie": "^2.1.3",
     "lodash": "^4.17.4",
     "moment": "^2.17.1",
-    "n": "^8.0.2",
     "qiankun": "^2.6.3",
     "qs": "^6.2.0",
-    "r": "0.0.5",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "s": "^1.0.0",
-    "x": "^0.1.2"
+    "react-dom": "^15.4.2"
   },
   "devDependencies": {
     "atool-build": "^0.9.3",
@@ -35,6 +25,7 @@
     "babel-plugin-import": "^1.0.1",
     "babel-plugin-transform-runtime": "^6.9.0",
     "babel-runtime": "^6.9.2",
+    "cross-env": "^7.0.3",
     "dora": "^0.4.3",
     "dora-plugin-browser-history": "^0.2.0",
     "dora-plugin-proxy": "^0.8.5",
@@ -54,7 +45,7 @@
   },
   "scripts": {
     "start": "dora --plugins \"proxy,webpack,webpack-hmr,browser-history?index=/src/index.html\"",
-    "lint": "eslint --fix --ext .js,.jsx .",
-    "build": "rimraf dist/* && atool-build"
+    "build": "rimraf dist/* && atool-build",
+    "lint": "eslint --fix --ext .js,.jsx ."
   }
 }

@@ -1,6 +1,6 @@
 const path = require("path");
 
-module.exports = function (webpackConfig) {
+module.exports = function (webpackConfig, env) {
   webpackConfig.babel.babelrc = false;
   webpackConfig.babel.plugins.push("transform-runtime");
   webpackConfig.babel.plugins.push([
@@ -10,6 +10,10 @@ module.exports = function (webpackConfig) {
       style: "css",
     },
   ]);
+  // HMR for development.
+  if (env === "development") {
+    webpackConfig.babel.plugins.push("dva-hmr");
+  }
   webpackConfig.module.loaders.push({
     test: /\.scss$/,
     loaders: [

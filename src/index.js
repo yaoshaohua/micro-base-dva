@@ -17,11 +17,15 @@ app.router(require('./router'));
 
 app.start('#root');
 
+const entry = process.env.NODE_ENV === 'production' ? '//micro-vue3.vercel.app' : '//localhost:9002';
+
+console.log('NODE_ENV', process.env.NODE_ENV);
+
 registerMicroApps(
   [
     {
       name: 'micro-vue3',
-      entry: '//micro-vue3.vercel.app',
+      entry,
       container: '#micro-vue3',
       activeRule: '/micro-vue3/',
     },
